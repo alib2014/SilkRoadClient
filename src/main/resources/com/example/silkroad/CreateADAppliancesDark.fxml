@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0c0c0c;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.silkroad.CreateADAppliancesDarkController">
+   <children>
+      <Label alignment="CENTER" layoutY="34.0" prefHeight="18.0" prefWidth="600.0" text="Appliances" textFill="WHITE">
+         <font>
+            <Font name="Bell MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Option">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#backProfile" text="Back to profile" />
+                  <MenuItem mnemonicParsing="false" onAction="#backMenu" text="Back to menu" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#switchLight" text="Switch to Light mode" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button layoutX="72.0" layoutY="161.0" mnemonicParsing="false" onAction="#setPicture" prefHeight="26.0" prefWidth="77.0" text="Set image">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+      <Label layoutX="201.0" layoutY="78.0" text="Title            :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="116.0" text="Price           :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="199.0" layoutY="148.0" text="City             :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="181.0" text="Color          :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="200.0" layoutY="217.0" text="Description :" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="newCheckBox" layoutX="201.0" layoutY="254.0" mnemonicParsing="false" text="New" textFill="WHITE">
+         <font>
+            <Font name="Serif Regular" size="16.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="titleTextField" layoutX="310.0" layoutY="78.0" promptText="title" />
+      <TextField fx:id="priceTextField" layoutX="311.0" layoutY="116.0" promptText="price" />
+      <TextField fx:id="cityTextField" layoutX="311.0" layoutY="149.0" promptText="city" />
+      <TextField fx:id="colorTextField" layoutX="312.0" layoutY="181.0" promptText="color" />
+      <TextField fx:id="descriptionTextField" layoutX="311.0" layoutY="217.0" promptText="description" />
+      <Button layoutX="274.0" layoutY="318.0" mnemonicParsing="false" onAction="#setAD" text="Set AD">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+      <ImageView fx:id="ADImage" fitHeight="72.0" fitWidth="78.0" layoutX="72.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../camera-icon-vector-21756895.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="612.0" prefWidth="1100.0" style="-fx-background-color: #003ad5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.silkroad.CreateADDigitalGoodsLightController">
+    <children>
+        <Label alignment="CENTER" layoutY="34.0" prefHeight="35.0" prefWidth="1100.0" text="Digital Goods" textFill="WHITE">
+            <font>
+                <Font name="Bell MT Bold" size="24.0" />
+            </font>
+        </Label>
+        <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="1100.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Option">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#backProfile" text="Back to profile" />
+                        <MenuItem mnemonicParsing="false" onAction="#backMenu" text="Back to menu" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchDark" text="Switch to Dark mode" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button layoutX="387.0" layoutY="168.0" mnemonicParsing="false" onAction="#setPicture" prefHeight="26.0" prefWidth="77.0" text="Set image">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+        <Label layoutX="488.0" layoutY="78.0" text="Title            :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="488.0" layoutY="116.0" text="Price           :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="487.0" layoutY="148.0" text="City             :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="487.0" layoutY="181.0" text="Brand          :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="487.0" layoutY="217.0" text="Description :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="newCheckBox" layoutX="488.0" layoutY="256.0" mnemonicParsing="false" text="New" textFill="WHITE">
+            <font>
+                <Font name="Serif Regular" size="16.0" />
+            </font>
+        </CheckBox>
+        <TextField fx:id="titleTextField" layoutX="600.0" layoutY="78.0" promptText="title" />
+        <TextField fx:id="priceTextField" layoutX="600.0" layoutY="116.0" promptText="price" />
+        <TextField fx:id="cityTextField" layoutX="600.0" layoutY="148.0" promptText="city" />
+        <TextField fx:id="brandTextField" layoutX="600.0" layoutY="181.0" promptText="brand" />
+        <TextField fx:id="descriptionTextfield" layoutX="600.0" layoutY="217.0" promptText="description" />
+        <Button fx:id="setADButton" disable="true" layoutX="524.0" layoutY="544.0" mnemonicParsing="false" onAction="#setAD" text="Set AD">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+        <ImageView fx:id="ADImage" fitHeight="72.0" fitWidth="78.0" layoutX="390.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../camera-icon-vector-21756895.jpg" />
+            </image>
+        </ImageView>
+        <CheckBox fx:id="digitalCheckBox" layoutX="14.0" layoutY="301.0" mnemonicParsing="false" onAction="#digital" text="Digital Appliances" textFill="WHITE">
+            <font>
+                <Font name="Serif Regular" size="16.0" />
+            </font>
+        </CheckBox>
+        <CheckBox fx:id="accessoriesCheckBox" layoutX="199.0" layoutY="301.0" mnemonicParsing="false" onAction="#accessories" text="Accessories" textFill="WHITE">
+            <font>
+                <Font name="Serif Regular" size="16.0" />
+            </font>
+        </CheckBox>
+        <CheckBox fx:id="computerCheckBox" layoutX="336.0" layoutY="301.0" mnemonicParsing="false" onAction="#computer" text="Computer" textFill="WHITE">
+            <font>
+                <Font name="Serif Regular" size="16.0" />
+            </font>
+        </CheckBox>
+        <Label fx:id="ramPC" disable="true" layoutX="337.0" layoutY="344.0" text="Ram :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="graphic" disable="true" layoutX="336.0" layoutY="390.0" text="Graphic :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="os" disable="true" layoutX="331.0" layoutY="439.0" text="Operation System :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="ramPCText" disable="true" layoutX="480.0" layoutY="344.0" prefHeight="0.0" prefWidth="90.0" />
+        <TextField fx:id="graphicText" disable="true" layoutX="480.0" layoutY="389.0" prefHeight="26.0" prefWidth="90.0" />
+        <TextField fx:id="osText" disable="true" layoutX="480.0" layoutY="439.0" prefHeight="26.0" prefWidth="90.0" />
+        <CheckBox fx:id="consoleCheckBox" layoutX="585.0" layoutY="301.0" mnemonicParsing="false" onAction="#console" text="Gaming Console" textFill="WHITE">
+            <font>
+                <Font name="Serif Regular" size="16.0" />
+            </font>
+        </CheckBox>
+        <Label fx:id="controller" disable="true" layoutX="585.0" layoutY="389.0" text="Number Controllers :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="memoryConsole" disable="true" layoutX="585.0" layoutY="344.0" text="Memory :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="memoryConsoleText" disable="true" layoutX="750.0" layoutY="343.0" prefHeight="26.0" prefWidth="90.0" />
+        <TextField fx:id="controllerText" disable="true" layoutX="750.0" layoutY="388.0" prefHeight="26.0" prefWidth="90.0" />
+        <CheckBox fx:id="phoneCheckBox" layoutX="850.0" layoutY="301.0" mnemonicParsing="false" onAction="#phone" text="Phone and Tablet" textFill="WHITE">
+            <font>
+                <Font name="Serif Regular" size="16.0" />
+            </font>
+        </CheckBox>
+        <Label fx:id="color" disable="true" layoutX="850.0" layoutY="343.0" text="Color :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="ramPhone" disable="true" layoutX="850.0" layoutY="390.0" text="Ram :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="memoryPhone" disable="true" layoutX="850.0" layoutY="439.0" text="Memory :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label fx:id="SIM" disable="true" layoutX="850.0" layoutY="481.0" text="SIM Cars Number :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="colorText" disable="true" layoutX="995.0" layoutY="343.0" prefHeight="26.0" prefWidth="90.0" />
+        <TextField fx:id="ramPhoneText" disable="true" layoutX="995.0" layoutY="389.0" prefHeight="26.0" prefWidth="90.0" />
+        <TextField fx:id="memoryPhoneText" disable="true" layoutX="995.0" layoutY="438.0" prefHeight="26.0" prefWidth="90.0" />
+        <TextField fx:id="SIMText" disable="true" layoutX="995.0" layoutY="480.0" prefHeight="26.0" prefWidth="90.0" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="489.0" prefWidth="600.0" style="-fx-background-color: #003ad5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.silkroad.ChatBoxLightController">
+    <children>
+        <ScrollPane fx:id="scroll" layoutX="47.0" layoutY="99.0" prefHeight="317.0" prefWidth="506.0" style="-fx-background-color: #0c0c0c;">
+            <content>
+                <VBox fx:id="vBox" prefHeight="295.0" prefWidth="490.0" />
+            </content></ScrollPane>
+        <MenuBar layoutY="-1.0" prefHeight="26.0" prefWidth="600.0">
+            <menus>
+            <Menu mnemonicParsing="false" text="Option">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#backProfile" text="Back to profile" />
+              </items>
+            </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchDark" text="Switch to Dark mode" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <TextField fx:id="messageTextField" layoutX="47.0" layoutY="415.0" prefHeight="26.0" prefWidth="432.0" promptText="message" />
+        <Button layoutX="479.0" layoutY="415.0" mnemonicParsing="false" onAction="#send" prefHeight="26.0" prefWidth="74.0" text="send" />
+        <Label fx:id="accountName" alignment="CENTER" layoutX="46.0" layoutY="64.0" prefHeight="18.0" prefWidth="506.0" text="Label" textAlignment="CENTER" textFill="#ec0202">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

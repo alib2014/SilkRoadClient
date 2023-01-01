@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="486.0" prefWidth="600.0" style="-fx-background-color: #0c0c0c;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.silkroad.LoginDarkController">
+   <children>
+      <Label alignment="CENTER" layoutY="39.0" prefHeight="18.0" prefWidth="600.0" text="Login" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="26.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="111.0" layoutY="88.0" prefHeight="80.0" prefWidth="378.0" style="-fx-background-color: #3d0404; -fx-background-radius: 50;">
+         <children>
+            <TextField fx:id="usernameTextField" layoutX="118.0" layoutY="27.0" prefHeight="26.0" prefWidth="222.0" promptText="username :" />
+            <ImageView fitHeight="52.0" fitWidth="58.0" layoutX="46.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../profile_121261.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="110.0" layoutY="175.0" prefHeight="80.0" prefWidth="378.0" style="-fx-background-color: #3d0404; -fx-background-radius: 50;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="52.0" layoutX="56.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../kissclipart-password-icon-clipart-password-computer-icons-clip-d813f06606bcdc9a.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="passwordTextField" layoutX="118.0" layoutY="27.0" prefHeight="26.0" prefWidth="222.0" promptText="password :" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="111.0" layoutY="261.0" prefHeight="103.0" prefWidth="378.0" style="-fx-background-color: #3d0404; -fx-background-radius: 50;">
+         <children>
+            <AnchorPane layoutX="31.0" layoutY="21.0" prefHeight="38.0" prefWidth="158.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="captchaLabel" alignment="CENTER" prefHeight="38.0" prefWidth="160.0">
+                     <font>
+                        <Font name="Snap ITC" size="16.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="captchaTextField" layoutX="209.0" layoutY="28.0" promptText="captcha :" />
+            <Label fx:id="captchaValid" layoutX="31.0" layoutY="72.0" prefHeight="18.0" prefWidth="160.0" textFill="RED" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="loginButton" layoutX="360.0" layoutY="400.0" mnemonicParsing="false" onAction="#Login" prefHeight="26.0" prefWidth="74.0" text="Login">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+      <Label layoutX="132.0" layoutY="445.0" text="Don't have an account yet?" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="325.0" layoutY="443.0" mnemonicParsing="false" onAction="#signUp" text="Sign Up">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+      <MenuBar layoutX="-1.0" layoutY="1.0" prefHeight="26.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Option">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#back" text="Back" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#switchLight" text="Switch to Light mode" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="error" alignment="CENTER" layoutX="132.0" layoutY="373.0" prefHeight="18.0" prefWidth="337.0" textFill="RED" />
+      <Button layoutX="183.0" layoutY="400.0" mnemonicParsing="false" onAction="#forgetPass" prefHeight="26.0" prefWidth="115.0" text="Forgot password">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

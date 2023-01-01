@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="478.0" style="-fx-background-color: #0c0c0c;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.silkroad.ContactsLightController">
+    <children>
+        <VBox layoutX="60.0" layoutY="40.0" prefHeight="306.0" prefWidth="366.0">
+            <children>
+                <AnchorPane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3d0404; -fx-background-radius: 10;">
+                    <children>
+                        <Label fx:id="name1" layoutX="235.0" layoutY="22.0" text="name1" textFill="WHITE">
+                            <font>
+                                <Font name="Franklin Gothic Demi" size="14.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="image1" fitHeight="44.0" fitWidth="43.0" layoutX="309.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="25.0" layoutY="17.0" mnemonicParsing="false" onAction="#chat1" prefHeight="26.0" prefWidth="61.0" text="Chat">
+                            <font>
+                                <Font name="Bauhaus 93" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="pane2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3d0404; -fx-background-radius: 10;">
+                    <children>
+                        <Label fx:id="name2" layoutX="235.0" layoutY="22.0" text="name2" textFill="WHITE">
+                            <font>
+                                <Font name="Franklin Gothic Demi" size="14.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="image2" fitHeight="44.0" fitWidth="43.0" layoutX="309.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="25.0" layoutY="17.0" mnemonicParsing="false" onAction="#chat2" prefHeight="26.0" prefWidth="61.0" text="Chat">
+                            <font>
+                                <Font name="Bauhaus 93" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="pane3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3d0404; -fx-background-radius: 10;">
+                    <children>
+                        <Label fx:id="name3" layoutX="235.0" layoutY="22.0" text="name3" textFill="WHITE">
+                            <font>
+                                <Font name="Franklin Gothic Demi" size="14.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="image3" fitHeight="44.0" fitWidth="43.0" layoutX="309.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="25.0" layoutY="17.0" mnemonicParsing="false" onAction="#chat3" prefHeight="26.0" prefWidth="61.0" text="Chat">
+                            <font>
+                                <Font name="Bauhaus 93" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="pane4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3d0404; -fx-background-radius: 10;">
+                    <children>
+                        <Label fx:id="name4" layoutX="235.0" layoutY="22.0" text="name4" textFill="WHITE">
+                            <font>
+                                <Font name="Franklin Gothic Demi" size="14.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="image4" fitHeight="44.0" fitWidth="43.0" layoutX="309.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="25.0" layoutY="17.0" mnemonicParsing="false" onAction="#chat4" prefHeight="26.0" prefWidth="61.0" text="Chat">
+                            <font>
+                                <Font name="Bauhaus 93" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="pane5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3d0404; -fx-background-radius: 10;">
+                    <children>
+                        <Label fx:id="name5" layoutX="235.0" layoutY="22.0" text="name5" textFill="WHITE">
+                            <font>
+                                <Font name="Franklin Gothic Demi" size="14.0" />
+                            </font>
+                        </Label>
+                        <ImageView fx:id="image5" fitHeight="44.0" fitWidth="43.0" layoutX="309.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" />
+                        <Button layoutX="25.0" layoutY="17.0" mnemonicParsing="false" onAction="#chat5" prefHeight="26.0" prefWidth="61.0" text="Chat">
+                            <font>
+                                <Font name="Bauhaus 93" size="12.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+            </children>
+        </VBox>
+        <Button layoutX="150.0" layoutY="361.0" mnemonicParsing="false" onAction="#previous" text="Previous" />
+        <Button layoutX="270.0" layoutY="361.0" mnemonicParsing="false" onAction="#next" prefHeight="26.0" prefWidth="61.0" text="Next" />
+        <MenuBar prefHeight="26.0" prefWidth="478.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Option">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#backMenu" text="Back to menu" />
+                        <MenuItem mnemonicParsing="false" onAction="#backProfile" text="Back to profile" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchDark" text="Switch to Dark mode" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>

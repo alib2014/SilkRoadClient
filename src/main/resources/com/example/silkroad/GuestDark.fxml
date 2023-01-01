@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="653.0" prefWidth="590.0" style="-fx-background-color: #0c0c0c;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.silkroad.GuestDarkController">
+    <children>
+        <Button fx:id="nextButton" layoutX="319.0" layoutY="599.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="26.0" prefWidth="82.0" text="Next Page" />
+        <Button fx:id="lastButton" layoutX="185.0" layoutY="599.0" mnemonicParsing="false" onAction="#lastPage" prefHeight="26.0" prefWidth="82.0" text="Last Page" />
+        <ScrollPane layoutX="36.0" layoutY="109.0" prefHeight="458.0" prefWidth="528.0" style="-fx-background-color: #0c0c0c;">
+            <content>
+                <VBox prefHeight="722.0" prefWidth="510.0" style="-fx-background-color: #0c0c0c;">
+                    <children>
+                        <Pane fx:id="pane1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3d0404; -fx-background-radius: 10;">
+                            <children>
+                                <Label fx:id="title1" alignment="CENTER" layoutX="395.0" layoutY="31.0" onMouseClicked="#openAD1" prefHeight="33.0" prefWidth="90.0" text="title" textFill="WHITE">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="image1" fitHeight="65.0" fitWidth="68.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                <Label fx:id="price1" alignment="CENTER" layoutX="227.0" layoutY="37.0" prefHeight="17.0" prefWidth="73.0" text="price" textFill="WHITE">
+                                    <font>
+                                        <Font name="Segoe Print Bold" size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="pane2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3d0404; -fx-background-radius: 10;">
+                            <children>
+                                <Label fx:id="title2" alignment="CENTER" layoutX="395.0" layoutY="31.0" onMouseClicked="#openAD2" prefHeight="33.0" prefWidth="90.0" text="title" textFill="WHITE">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="image2" fitHeight="65.0" fitWidth="68.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                <Label fx:id="price2" alignment="CENTER" layoutX="227.0" layoutY="37.0" prefHeight="17.0" prefWidth="73.0" text="price" textFill="WHITE">
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="pane3" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 10; -fx-background-color: #3d0404;">
+                            <children>
+                                <Label fx:id="title3" alignment="CENTER" layoutX="395.0" layoutY="31.0" onMouseClicked="#openAD3" prefHeight="33.0" prefWidth="90.0" text="title" textFill="WHITE">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="image3" fitHeight="65.0" fitWidth="68.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                <Label fx:id="price3" alignment="CENTER" layoutX="227.0" layoutY="37.0" prefHeight="17.0" prefWidth="73.0" text="price" textFill="WHITE">
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="pane4" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3d0404; -fx-background-radius: 10;">
+                            <children>
+                                <Label fx:id="title4" alignment="CENTER" layoutX="395.0" layoutY="31.0" onMouseClicked="#openAD4" prefHeight="33.0" prefWidth="90.0" text="title" textFill="WHITE">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <font>
+                                        <Font name="Segoe Print" size="12.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="image4" fitHeight="65.0" fitWidth="68.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                <Label fx:id="price4" alignment="CENTER" layoutX="227.0" layoutY="37.0" prefHeight="17.0" prefWidth="73.0" text="price" textFill="WHITE">
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="pane5" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3d0404; -fx-background-radius: 10;">
+                            <children>
+                                <Label fx:id="title5" alignment="CENTER" layoutX="395.0" layoutY="31.0" onMouseClicked="#openAD5" prefHeight="33.0" prefWidth="90.0" text="title" textFill="WHITE">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="image5" fitHeight="65.0" fitWidth="68.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                <Label fx:id="price5" alignment="CENTER" layoutX="227.0" layoutY="37.0" prefHeight="17.0" prefWidth="73.0" text="price" textFill="WHITE">
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="pane6" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3d0404; -fx-background-radius: 10;">
+                            <children>
+                                <Label fx:id="title6" alignment="CENTER" layoutX="395.0" layoutY="31.0" onMouseClicked="#openAD6" prefHeight="33.0" prefWidth="90.0" text="title" textFill="WHITE">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="image6" fitHeight="65.0" fitWidth="68.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                <Label fx:id="price6" alignment="CENTER" layoutX="227.0" layoutY="37.0" prefHeight="17.0" prefWidth="73.0" text="price" textFill="WHITE">
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="pane7" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3d0404; -fx-background-radius: 10;">
+                            <children>
+                                <Label fx:id="title7" alignment="CENTER" layoutX="395.0" layoutY="31.0" onMouseClicked="#openAD7" prefHeight="33.0" prefWidth="90.0" text="title" textFill="WHITE">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="image7" fitHeight="65.0" fitWidth="68.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                <Label fx:id="price7" alignment="CENTER" layoutX="227.0" layoutY="37.0" prefHeight="17.0" prefWidth="73.0" text="price" textFill="WHITE">
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </Pane>
+                        <Pane fx:id="pane8" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #3d0404; -fx-background-radius: 10;">
+                            <children>
+                                <Label fx:id="title8" alignment="CENTER" layoutX="395.0" layoutY="31.0" onMouseClicked="#openAD8" prefHeight="33.0" prefWidth="90.0" text="title" textFill="WHITE">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <font>
+                                        <Font name="Segoe Print Bold" size="14.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fx:id="image8" fitHeight="65.0" fitWidth="68.0" layoutX="29.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true" />
+                                <Label fx:id="price8" alignment="CENTER" layoutX="227.0" layoutY="37.0" prefHeight="17.0" prefWidth="73.0" text="price" textFill="WHITE">
+                                    <font>
+                                        <Font name="Segoe Print" size="14.0" />
+                                    </font></Label>
+                            </children>
+                        </Pane>
+                    </children>
+                </VBox>
+            </content>
+        </ScrollPane>
+        <MenuBar layoutY="-1.0" prefHeight="26.0" prefWidth="593.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Option">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#backMenu" text="Back to menu" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchLight" text="Switch to Light mode" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>

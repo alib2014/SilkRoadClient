@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="807.0" prefWidth="602.0" style="-fx-background-color: #0c0c0c;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.silkroad.SignUpDarkController">
+   <children>
+      <MenuBar prefHeight="26.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Option">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#back" text="Back" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#switchLight" text="Switch to Light mode" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label alignment="CENTER" layoutX="-4.0" layoutY="26.0" prefHeight="18.0" prefWidth="606.0" text="Sign Up" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="26.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="63.0" layoutY="64.0" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #3d0404; -fx-background-radius: 50;">
+         <children>
+            <TextField fx:id="nameTextField" layoutX="214.0" layoutY="19.0" prefHeight="26.0" prefWidth="222.0" promptText="name" />
+            <Label layoutX="14.0" layoutY="22.0" text="Enter your name                   :" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="64.0" layoutY="136.0" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #3d0404; -fx-background-radius: 50;">
+         <children>
+            <TextField fx:id="lastnameTextField" layoutX="214.0" layoutY="19.0" prefHeight="26.0" prefWidth="222.0" promptText="lastname" />
+            <Label layoutX="14.0" layoutY="22.0" text="Enter your lastname            :" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="63.0" layoutY="206.0" prefHeight="88.0" prefWidth="471.0" style="-fx-background-color: #3d0404; -fx-background-radius: 50;">
+         <children>
+            <TextField fx:id="eMailTextField" layoutX="214.0" layoutY="19.0" onKeyTyped="#emailType" prefHeight="26.0" prefWidth="222.0" promptText="E-mail" />
+            <Label layoutX="14.0" layoutY="22.0" text="Enter yout E-mail                 :" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="emailVerify" alignment="CENTER" layoutX="214.0" layoutY="49.0" prefHeight="18.0" prefWidth="222.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="65.0" layoutY="298.0" prefHeight="88.0" prefWidth="471.0" style="-fx-background-color: #3d0404; -fx-background-radius: 50;">
+         <children>
+            <TextField fx:id="phoneNumberTextField" layoutX="214.0" layoutY="19.0" onKeyTyped="#typePhone" prefHeight="26.0" prefWidth="222.0" promptText="phonenumber" />
+            <Label layoutX="14.0" layoutY="22.0" prefHeight="20.0" prefWidth="182.0" text="Enter your phonenumber   :" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="phoneVerify" alignment="CENTER" layoutX="214.0" layoutY="49.0" prefHeight="18.0" prefWidth="222.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="64.0" layoutY="392.0" prefHeight="79.0" prefWidth="471.0" style="-fx-background-color: #3d0404; -fx-background-radius: 50;">
+         <children>
+            <TextField fx:id="cityTextField" layoutX="214.0" layoutY="19.0" prefHeight="26.0" prefWidth="222.0" promptText="city" />
+            <Label layoutX="14.0" layoutY="22.0" text="Enter your city                     :" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="cityValid" alignment="CENTER" layoutX="214.0" layoutY="51.0" prefHeight="18.0" prefWidth="222.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="63.0" layoutY="476.0" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #3d0404; -fx-background-radius: 50;">
+         <children>
+            <TextField fx:id="usernameTextField" layoutX="214.0" layoutY="19.0" prefHeight="26.0" prefWidth="222.0" promptText="username" />
+            <Label layoutX="14.0" layoutY="22.0" text="Enter your favor username :" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="65.0" layoutY="546.0" prefHeight="88.0" prefWidth="471.0" style="-fx-background-color: #3d0404; -fx-background-radius: 50;">
+         <children>
+            <TextField fx:id="passwordTextField" layoutX="214.0" layoutY="19.0" onKeyTyped="#typePass" prefHeight="26.0" prefWidth="222.0" promptText="password" />
+            <Label layoutX="14.0" layoutY="22.0" text="Enter your password           :" textFill="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="passPower" alignment="CENTER" layoutX="214.0" layoutY="57.0" prefHeight="18.0" prefWidth="222.0" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="65.0" layoutY="640.0" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #3d0404; -fx-background-radius: 50;">
+         <children>
+            <TextField fx:id="captchaTextField" layoutX="214.0" layoutY="19.0" prefHeight="26.0" prefWidth="222.0" promptText="captcha" />
+            <AnchorPane layoutX="29.0" layoutY="13.0" prefHeight="20.0" prefWidth="160.0" style="-fx-background-color: white;">
+               <children>
+                  <Label fx:id="captchaLabel" alignment="CENTER" prefHeight="38.0" prefWidth="160.0">
+                     <font>
+                        <Font name="Snap ITC" size="16.0" />
+                     </font></Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Button fx:id="signUpButton" layoutX="247.0" layoutY="709.0" mnemonicParsing="false" onAction="#signUp" prefHeight="26.0" prefWidth="74.0" text="Sign Up">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+      <Label layoutX="92.0" layoutY="767.0" text="Already have an account?" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="299.0" layoutY="767.0" mnemonicParsing="false" onAction="#Login" text="Login">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+      <Label fx:id="notAcceptable" alignment="CENTER" layoutX="65.0" layoutY="742.0" prefHeight="18.0" prefWidth="471.0" textFill="RED" />
+   </children>
+</AnchorPane>

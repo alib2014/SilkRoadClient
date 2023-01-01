@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="430.0" prefWidth="600.0" style="-fx-background-color: #0c0c0c;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.silkroad.SearchBoxDarkController">
+   <children>
+      <Label layoutX="75.0" layoutY="27.0" prefHeight="43.0" prefWidth="154.0" text="Enter the city :" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="city" layoutX="226.0" layoutY="36.0" prefHeight="26.0" prefWidth="186.0" promptText="city" />
+      <Label layoutX="75.0" layoutY="72.0" prefHeight="33.0" prefWidth="186.0" text="Chose type of ADS :" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="appliances" layoutX="112.0" layoutY="114.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="131.0" text="Appliances" textFill="WHITE" />
+      <CheckBox fx:id="digital" layoutX="112.0" layoutY="141.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="131.0" text="Digital Goods" textFill="WHITE" />
+      <CheckBox fx:id="industrial" layoutX="112.0" layoutY="166.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="134.0" text="Industrial Equipment" textFill="WHITE" />
+      <CheckBox fx:id="personal" layoutX="112.0" layoutY="191.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="131.0" text="Personal Items" textFill="WHITE" />
+      <CheckBox fx:id="realState" layoutX="112.0" layoutY="219.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="131.0" text="Real State" textFill="WHITE" />
+      <CheckBox fx:id="vehicle" layoutX="112.0" layoutY="244.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="131.0" text="Vehicle" textFill="WHITE" />
+      <Label layoutX="75.0" layoutY="286.0" text="Title of ADS :" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="title" layoutX="236.0" layoutY="286.0" prefHeight="26.0" prefWidth="186.0" promptText="title" />
+      <Button layoutX="261.0" layoutY="390.0" mnemonicParsing="false" onAction="#search" text="Search">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+      <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Option">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#backProfile" text="Back to profile" />
+                  <MenuItem mnemonicParsing="false" onAction="#backMenu" text="Back to main menu" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#switchLight" text="Switch to Light mode" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label layoutX="97.0" layoutY="343.0" text="Price :" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="174.0" layoutY="348.0" text="from" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="12.0" />
+         </font></Label>
+      <TextField fx:id="minPrice" layoutX="217.0" layoutY="343.0" prefHeight="26.0" prefWidth="95.0" promptText="min" />
+      <Label layoutX="323.0" layoutY="348.0" text="to" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="12.0" />
+         </font></Label>
+      <TextField fx:id="maxPrice" layoutX="347.0" layoutY="343.0" prefHeight="26.0" prefWidth="95.0" promptText="max" />
+   </children>
+</AnchorPane>

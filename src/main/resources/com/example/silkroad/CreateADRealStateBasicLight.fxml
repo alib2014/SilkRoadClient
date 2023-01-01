@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="401.0" prefWidth="600.0" style="-fx-background-color: #003ad5;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.silkroad.CreateADRealStateLightController">
+    <children>
+        <Label alignment="CENTER" layoutY="34.0" prefHeight="18.0" prefWidth="600.0" text="Real State" textFill="WHITE">
+            <font>
+                <Font name="Bell MT Bold" size="24.0" />
+            </font>
+        </Label>
+        <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Option">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#backProfile" text="Back to profile" />
+                        <MenuItem mnemonicParsing="false" onAction="#backMenu" text="Back to menu" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchDark" text="Switch to Light mode" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button layoutX="72.0" layoutY="161.0" mnemonicParsing="false" onAction="#setPicture" prefHeight="26.0" prefWidth="77.0" text="Set image">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+        <Label layoutX="201.0" layoutY="78.0" text="Title            :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="200.0" layoutY="116.0" text="Price           :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="199.0" layoutY="148.0" text="City             :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="200.0" layoutY="181.0" text="Area           :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <Label layoutX="200.0" layoutY="217.0" text="Description :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="buildingCheckBox" layoutX="201.0" layoutY="254.0" mnemonicParsing="false" onAction="#isBuilding" text="Building" textFill="WHITE">
+            <font>
+                <Font name="Serif Regular" size="16.0" />
+            </font>
+        </CheckBox>
+        <TextField fx:id="titleTextField" layoutX="310.0" layoutY="78.0" promptText="title" />
+        <TextField fx:id="priceTextField" layoutX="311.0" layoutY="116.0" promptText="price" />
+        <TextField fx:id="cityTextField" layoutX="311.0" layoutY="149.0" promptText="city" />
+        <TextField fx:id="areaTextField" layoutX="312.0" layoutY="181.0" promptText="area" />
+        <TextField fx:id="descriptionTextfield" layoutX="311.0" layoutY="217.0" promptText="description" />
+        <Button layoutX="274.0" layoutY="355.0" mnemonicParsing="false" onAction="#setAD" text="Set AD">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+        <ImageView fx:id="ADImage" fitHeight="72.0" fitWidth="78.0" layoutX="72.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../camera-icon-vector-21756895.jpg" />
+            </image>
+        </ImageView>
+        <Label fx:id="yearLabel" disable="true" layoutX="201.0" layoutY="283.0" text="Year          :" textFill="WHITE">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="storeCheckBox" disable="true" layoutX="200.0" layoutY="317.0" mnemonicParsing="false" text="Is Store" textFill="WHITE">
+            <font>
+                <Font name="Serif Regular" size="16.0" />
+            </font>
+        </CheckBox>
+        <TextField fx:id="yearTextField" disable="true" layoutX="313.0" layoutY="283.0" promptText="year" />
+    </children>
+</AnchorPane>

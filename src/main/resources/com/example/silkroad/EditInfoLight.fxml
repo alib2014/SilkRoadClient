@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="602.0" style="-fx-background-color: #003ad5;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.silkroad.EditInfoLightController">
+    <children>
+        <MenuBar prefHeight="26.0" prefWidth="600.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Option">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#backProfile" text="Back to profile" />
+                  <MenuItem mnemonicParsing="false" onAction="#backMenu" text="Back to main menu" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="View">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#switchDark" text="Switch to Dark mode" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Label alignment="CENTER" layoutX="-4.0" layoutY="26.0" prefHeight="18.0" prefWidth="606.0" text="Edit Info" textFill="WHITE">
+            <font>
+                <Font name="Forte" size="26.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutX="63.0" layoutY="64.0" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #7398fa; -fx-background-radius: 50;">
+            <children>
+                <TextField fx:id="nameTextField" layoutX="214.0" layoutY="19.0" prefHeight="26.0" prefWidth="222.0" promptText="name" />
+                <Label layoutX="14.0" layoutY="22.0" text="Enter your name                   :" textFill="WHITE">
+                    <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="64.0" layoutY="136.0" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #7398fa; -fx-background-radius: 50;">
+            <children>
+                <TextField fx:id="lastnameTextField" layoutX="214.0" layoutY="19.0" prefHeight="26.0" prefWidth="222.0" promptText="lastname" />
+                <Label layoutX="14.0" layoutY="22.0" text="Enter your lastname            :" textFill="WHITE">
+                    <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="62.0" layoutY="208.0" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #7398fa; -fx-background-radius: 50;">
+            <children>
+                <TextField fx:id="cityTextField" layoutX="214.0" layoutY="19.0" prefHeight="26.0" prefWidth="222.0" promptText="city" />
+                <Label layoutX="14.0" layoutY="22.0" text="Enter your city                     :" textFill="WHITE">
+                    <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="62.0" layoutY="282.0" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #7398fa; -fx-background-radius: 50;">
+            <children>
+                <TextField fx:id="usernameTextField" layoutX="214.0" layoutY="19.0" prefHeight="26.0" prefWidth="222.0" promptText="username" />
+                <Label layoutX="14.0" layoutY="22.0" text="Enter your favor username :" textFill="WHITE">
+                    <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <AnchorPane layoutX="65.0" layoutY="356.0" prefHeight="64.0" prefWidth="471.0" style="-fx-background-color: #7398fa; -fx-background-radius: 50;">
+            <children>
+                <TextField fx:id="passwordTextField" layoutX="214.0" layoutY="19.0" prefHeight="26.0" prefWidth="222.0" promptText="password" />
+                <Label layoutX="14.0" layoutY="22.0" text="Enter your password           :" textFill="WHITE">
+                    <font>
+                        <Font name="Bell MT Bold" size="14.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+        <Button fx:id="signUpButton" layoutX="246.0" layoutY="440.0" mnemonicParsing="false" onAction="#setChange" prefHeight="26.0" prefWidth="102.0" text="Set Changes">
+         <font>
+            <Font name="Franklin Gothic Demi" size="12.0" />
+         </font></Button>
+      <Label fx:id="error" layoutX="285.0" layoutY="478.0" textFill="#ff0000" />
+    </children>
+</AnchorPane>
